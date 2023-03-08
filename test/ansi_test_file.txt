@@ -54,13 +54,14 @@
 1;37m  [1;37m  Color  [0m [1;37m[100m  Color  [0m [1;37m[101m  Color  [0m [1;37m[102m  Color  [0m [1;37m[103m  Color  [0m [1;37m[104m  Color  [0m [1;37m[105m  Color  [0m [1;37m[106m  Color  [0m [1;37m[107m  Color  [0m
   97m  [97m  Color  [0m [97m[100m  Color  [0m [97m[101m  Color  [0m [97m[102m  Color  [0m [97m[103m  Color  [0m [97m[104m  Color  [0m [97m[105m  Color  [0m [97m[106m  Color  [0m [97m[107m  Color  [0m
 
-Unsupported ANSI escape codes:
+Unsupported ANSI [34mescape[0m/[32mreset[0m codes:
 
-[2m ansi code 2 (faint) [0m
-[3m ansi code 3 (italic) [0m
-[4m ansi code 4 (underscore) [0m
-[5m ansi code 5 (slow blink) [0m
-[6m ansi code 6 (fast blink) [0m
-[7m ansi code 7 (reverse/negative) [0m
-[8m ansi code 8 (conceal/hidden) [0m
-[9m ansi code 9 (strike-through) [0m
+[34m[1m ansi[1m code 1[32m[22m (bold supported,[1m but rendered as color change) [0m
+[34m[2m ansi[2m code 2[32m[22m (faint) [0m
+[34m[3m ansi[3m code 3[32m[23m (italic) [0m
+[34m[4m ansi[4m code 4[32m[24m (underscore) [0m
+[34m[5m ansi[5m code 5[32m[25m (slow blink) [0m
+[34m[6m ansi[6m code 6[32m[25m (fast blink) [0m
+[34m[7m ansi[7m code 7[32m[27m (reverse/negative) [0m
+[34m[8m ansi[8m code 8[32m[28m (conceal/hidden) [0m
+[34m[9m ansi[9m code 9[32m[29m (strike-through) [0m

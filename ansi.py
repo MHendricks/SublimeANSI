@@ -230,7 +230,7 @@ class AnsiCommand(sublime_plugin.TextCommand):
         view = self.view
 
         # removing unsupported ansi escape codes before going forward: 2m 4m 5m 7m 8m
-        ansi_unsupported_codes = fast_view_find_all(view, r"\x1b\[(0;)?[24578]m")
+        ansi_unsupported_codes = fast_view_find_all(view, r"\x1b\[(0;)?(2?[24578]m|2[39]m)")
         for r in reversed(ansi_unsupported_codes):
             view.replace(edit, r, "\x1b[1m")
 
@@ -417,7 +417,7 @@ class AnsiColorBuildCommand(Default.exec.ExecCommand):
             return
 
         # replace unsupported ansi escape codes before going forward: 2m 4m 5m 7m 8m
-        unsupported_pattern = r"\x1b\[(0;)?[24578]m"
+        unsupported_pattern = r"\x1b\[(0;)?(2?[24578]m|2[39]m)"
         str_data = re.sub(unsupported_pattern, "\x1b[1m", data)
 
         # find all regions

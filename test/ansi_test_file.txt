@@ -56,11 +56,17 @@
 
 Unsupported ANSI escape codes:
 
-[2m ansi code 2 (faint) [0m
-[3m ansi code 3 (italic) [0m
-[4m ansi code 4 (underscore) [0m
-[5m ansi code 5 (slow blink) [0m
-[6m ansi code 6 (fast blink) [0m
-[7m ansi code 7 (reverse/negative) [0m
-[8m ansi code 8 (conceal/hidden) [0m
-[9m ansi code 9 (strike-through) [0m
+[1m ansi code 1/22 (bold) [0m              replaced   [[1mcode + reset[22m]  [[32m[1mcolor + code[36m[22m][0m  [[1m[32mcode + color[22m[36m][0m
+[2m ansi code 2/22 (dim/faint) [0m         replaced   [[2mcode + reset[22m]  [[32m[2mcolor + code[36m[22m][0m  [[2m[32mcode + color[22m[36m][0m
+[3m ansi code 3/23 (italic) [0m            replaced   [[3mcode + reset[23m]  [[32m[3mcolor + code[36m[23m][0m  [[3m[32mcode + color[23m[36m][0m
+[4m ansi code 4/24 (underscore) [0m        replaced   [[4mcode + reset[24m]  [[32m[4mcolor + code[36m[24m][0m  [[4m[32mcode + color[24m[36m][0m
+[5m ansi code 5/25 (slow blink) [0m                   [[5mcode + reset[25m]  [[32m[5mcolor + code[36m[25m][0m  [[5m[32mcode + color[25m[36m][0m
+[6m ansi code 6/25 (fast blink) [0m                   [[6mcode + reset[25m]  [[32m[6mcolor + code[36m[25m][0m  [[6m[32mcode + color[25m[36m][0m
+[7m ansi code 7/27 (reverse/negative) [0m  replaced   [[7mcode + reset[27m]  [[32m[7mcolor + code[36m[27m][0m  [[7m[32mcode + color[27m[36m][0m
+[8m ansi code 8/28 (conceal/hidden) [0m    replaced   [[8mcode + reset[28m]  [[32m[8mcolor + code[36m[28m][0m  [[8m[32mcode + color[28m[36m][0m
+[9m ansi code 9/29 (strike-through) [0m               [[9mcode + reset[29m]  [[32m[9mcolor + code[36m[29m][0m  [[9m[32mcode + color[29m[36m][0m
+
+Note: Assign a unique color to _bold for both fg and bg to see the unique coloring of replaced codes.
+
+[32mpre[33mD[22m[32mnormal color(correct)
+[32mpre[33mD[32m[22mcolor normal(incorrect)
